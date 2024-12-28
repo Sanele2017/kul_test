@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kulweb Technologies offers innovative IT solutions and managed services.">
+    <meta name="keywords" content="IT Solutions, Managed Services, Technology, Kulweb Technologies">
+    <title>Kulweb Tech</title>
+    <link rel="icon" href="images/Kulweb_1_-removebg-preview(2)(2).png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+
+        <header class="header">
+            <nav class="navbar">
+                <div class="menu-left">
+                    <div class="logo">
+                        <img src="images/Kulweb_1_-removebg-preview(2)(2).png" alt="Logo" class="logo">
+                    </div>
+                </div>
+                <div class="menu-right">
+                    <ul class="menu-li">
+                        <li>
+                            <a href="index.html" class="menu-link">Home</a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="#" class="menu-link">Company <span class="arrow">  ▼</span></a>
+                            <ul class="submenu">
+                                <li><a href="aboutus.html">About-Us</a></li>
+                                <li><a href="ourteam.html">Our-Team</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="services.html" class="menu-link">Services <span class="arrow">  ▼</span></a>
+                            <ul class="submenu">
+                                <li><a href="services.html">Cloud Services</a></li>
+                                <li><a href="services.html">Microsoft Azure</a></li>
+                                <li><a href="services.html">Microsoft 365</a></li>
+                                <li><a href="services.html">Network Services</a></li>
+                                <li><a href="services.html">Unified Communications</a></li>
+                                <li><a href="services.html">Security Services</a></li>
+                                <li><a href="services.html">Managed IT Services</a></li>
+                                <li><a href="services.html">Website Design</a></li>
+                                <li><a href="services.html">Hardware Repairs</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="menu-link">Contact</a>
+                        </li>
+                    </ul>
+                    <button onclick="toggleMenu()" class="btn-menubar lg-hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32-14.3 32 32z"/>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+            
+            <div class="text-box">
+                <div class="text-content">                
+                    <h1>Empowering <br>progress <br>through<span style="color: #37b426;">Technology</span></h1>
+                    <button class="btn-link">Learn more</button>
+                </div>
+            </div>
+        </header>
+        
+        <script>
+            function toggleMenu() {
+                const menu_box = document.querySelector(".menu-li");
+                const navbar = document.querySelector(".navbar");
+                navbar.classList.toggle('active');
+                menu_box.classList.toggle('active');
+            }
+        </script>
+    
+
+    <!-- Statistics Section placed outside the about-container -->
+     <section>
+        <div class="stats-container">
+        <div class="stat-item">
+            <i class="fas fa-smile-beam"></i> <!-- Icon for satisfied clients -->
+            <h2>75</h2>
+            <p>Satisfied Clients</p>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-briefcase"></i> <!-- Icon for projects completed -->
+            <h2>750</h2>
+            <p>Projects Completed</p>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-thumbs-up"></i> <!-- Icon for positive feedback -->
+            <h2>100%</h2>
+            <p>Positive Feedback</p>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-coffee"></i> <!-- Icon for cups of coffee -->
+            <h2>1000</h2>
+            <p>Cups of Coffee</p>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-calendar-alt"></i> <!-- Icon for years experience -->
+            <h2>10</h2>
+            <p>Years Of Experience</p>
+        </div>
+    </div>
+    </section>
+
+    <section class="custom-section" id="scrollSection">
+        <div class="left-container">
+            <img src="images/edited.PNG" alt="Description" class="section-image">
+        </div>
+        <div class="right-container">
+            <div class="card">
+                <div class="content">
+                    <h2>Our customers</h2>
+                    <p>Since Inception, Kulweb currently services over 75 clients nationally, <br>and a number of international clients in the U.S.A and Botswana. <br>Our footprint continues to grow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <!-- Services Section -->
+<section class="services-section">
+    <div class="container">
+        <h1 class="section-title"><span style="color: black;">Our Services</span></h1>
+        
+        <div class="service-cards">
+            <!-- Cloud Services Card -->
+            <div class="service-card">
+                <img src="images/cloud computing services image.jpg" alt="Cloud Services">
+                <h2>Cloud Services</h2>
+                <p>The cloud computing model enables convenient, on-demand access to a shared pool of configurable computing resources.</p>
+                <a href="services.html" class="service-link">Learn More</a>
+            </div>
+
+            <!-- Microsoft Azure Card -->
+            <div class="service-card">
+                <img src="images/microsoft azure service image.jpg" alt="Microsoft Azure">
+                <h2>Microsoft Azure</h2>
+                <p>Azure is a major cloud platform, consistently ranked as a leader for IaaS, PaaS, and SaaS solutions.</p>
+                <a href="services.html" class="service-link">Learn More</a>
+            </div>
+
+            <!-- Microsoft 365 Card -->
+            <div class="service-card">
+                <img src="images/microsoft 365 service image.webp"Microsoft 365">
+                <h2>Microsoft 365</h2>
+                <p>Extend your Office software into a rich collaboration suite with tons of new features that make your life easy.</p>
+                <a href="services.html" class="service-link">Learn More</a>
+            </div>
+
+            <!-- Network Design, Maintenance & Cloud Services Card -->
+            <div class="service-card">
+                <img src="images/network design , maintenance & cloud services images.jpg" alt="Network Design">
+                <h2>Network Design, Maintenance & Cloud Services</h2>
+                <p>Design and implement a network that’s specific to your needs with a thorough IT audit ensuring compatibility.</p>
+                <a href="services.html" class="service-link">Learn More</a>
+            </div>
+
+            <!-- Unified Communications Card -->
+            <div class="service-card">
+                <img src="images/unfied communications services image.jpg" alt="Unified Communications">
+                <h2>Unified Communications</h2>
+                <p>Innovations in voice software make enterprise features affordable for the SME market with cloud connectivity.</p>
+                <a href="services.html" class="service-link">Learn More</a>
+            </div>
+
+            <!-- Managed Support Services Card -->
+            <div class="service-card">
+                <img src="images/managed services images.jpg" alt="Managed Support Services">
+                <h2>Managed Support Services</h2>
+                <p>We offer customer-centric solutions managing IT infrastructure, providing a fully managed IT services solution.</p>
+                <a href="services.html" class="service-link">Learn More</a>
+            </div>
+
+            <!-- Security Services Card -->
+            <div class="service-card">
+                <img src="images/security services image.jpg" alt="Security Services">
+                <h2>Cyber-security Services</h2>
+                <p>Protect your business from malware with network and endpoint security solutions, ensuring complete protection.</p>
+                <a href="services.html" class="service-link">Learn More</a>
+            </div>
+
+            <!-- Website Design Card -->
+            <div class="service-card">
+                <img src="images/website design services.jpg" alt="Website Design">
+                <h2>Website Design</h2>
+                <p>We create fast, smooth, and visually appealing websites for any platform, ensuring a polished design with excellent UX/UI.</p>
+                <a href="services.html" class="service-link">Learn More</a>
+            </div>
+            <div class="service-card">
+                <img src="images/Hardware landing page.png" alt="Hardware Repairs">
+                <h2>Hardware Repairs</h2>
+                <p>We create fast, smooth, and visually appealing websites for any platform, ensuring a polished design with excellent UX/UI.</p>
+                <a href="services.html" class="service-link">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    </section>
+    <!-- Additional Content Section -->
+    <section class="factor">
+    <div class="additional-content">
+        <div class="text-content">
+            <h2>The "IT" Factor</h2>
+            <p>Our goal is to disseminate existing innovations into usable <br>solutions that can be implemented for our customers, <br>helping them to see the value of technology within their <br>environments.</p>
+        </div>
+        <div class="image-container">
+            <img src="images/Kulweb-Technologies_Business-Profile-2021-e1663598484472.jpg" alt="Decorative Image">
+        </div>
+    </div>
+</section>
+<!-- Blog Section on Homepage -->
+<section id="blog-section-home" class="blog-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Blogs</h2>
+        </div>
+
+
+             
+        <div class="col-md-12 mb-5">
+            <div class="blog-card">
+                <img src="images/cloud.png" class="img-fluid blog-image" alt="Blog Image 3">
+                <div class="blog-content">
+                    <h4 class="blog-title">Cloud Computing: The Future of Technology</h4>
+                    <p class="blog-date">Published on: Oct 8, 2024</p>
+                    <p class="blog-excerpt">Cloud computing is revolutionizing how businesses operate. This post explores the benefits, trends, and future of cloud technologies...</p>
+                    <p class="full-article">Cloud computing has rapidly evolved into a key technology that allows businesses to scale, operate more efficiently, and access computing power without the need for large physical infrastructure. With advancements in cloud services like AWS, Microsoft Azure, and Google Cloud, companies can now store data, run applications, and perform complex calculations all in the cloud...</p>
+                    <p class="full-article">As we look to the future, the impact of cloud computing is expected to increase significantly. More businesses are transitioning to hybrid cloud environments, adopting microservices architectures, and utilizing AI to optimize cloud workloads...</p>
+                    <!-- Add more content as needed -->
+                </div>
+            </div>
+        </div>
+
+            <div class="col-md-12 mb-5">
+                <div class="blog-card">
+                    <img src="images/cybersecurity.png" class="img-fluid blog-image" alt="Blog Image 2">
+                    <div class="blog-content">
+                        <h4 class="blog-title">The Importance of Cybersecurity in 2024</h4>
+                        <p class="blog-date">Published on: Oct 10, 2024</p>
+                        <p class="blog-excerpt">In today’s digital age, cybersecurity is more important than ever. Discover key strategies to protect your business from growing cyber threats...</p>
+                        <p class="full-article">Cybersecurity is no longer just a concern for IT departments. With more and more businesses relying on digital systems, security has become a business-critical function. The rapid rise in cyber attacks has made it necessary for companies to not only implement robust security measures but also educate their staff and clients about potential threats...</p>
+                        <p class="full-article">In this post, we’ll go over the key components of a cybersecurity strategy, explore how companies can stay ahead of cybercriminals, and provide actionable tips to safeguard sensitive data...</p>
+                        <!-- Add more content as needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ 
+
+<section class="partners-section">
+    <h2>our partners trust us</h2> 
+    <div class="partners-container">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="partner-card">
+                    <img src="images/aws_logo-removebg-preview(1).png" alt="Partner 1" class="partner-logo">
+                </div>
+                <div class="partner-card">
+                    <img src="images/Esquire-logo-removebg-preview.png" alt="Partner 2" class="partner-logo">
+                </div>
+                <div class="partner-card">
+                    <img src="images/HP_logo-removebg-preview-removebg-preview.png" alt="Partner 3" class="partner-logo">
+                </div>
+                <div class="partner-card">
+                    <img src="images/pc_shoppers_logo-removebg-preview.png" alt="Partner 4" class="partner-logo">
+                </div>
+                <div class="partner-card">
+                    <img src="images/sage_logo-removebg-preview.png" alt="Partner 5" class="partner-logo">
+                </div>
+                <div class="partner-card">
+                    <img src="images/veeam_logo-removebg-preview(1).png" alt="Partner 6" class="partner-logo">
+                </div>
+                <div class="partner-card">
+                    <img src="images/sonic_wall_logo-removebg-preview(1).png" alt="Partner 7" class="partner-logo">
+                </div>
+                <div class="partner-card">
+                    <img src="images/tech_express_logo_2-removebg-preview.png" alt="Partner 8" class="partner-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-info">
+            <h3>Kulwebtech</h3>
+            <p>61 Katherine Street, Sandton Johannesburg 2191</p>
+            <p> <br></p></p>
+            <p> <br></p></p>
+            <p>Operation hours:</p>
+            <p>Monday – Friday 08:00 - 17:00</p>
+            <p>Saturday – Sunday CLOSED</p>
+        </div>
+        <div class="quick-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="ourteam.html">Our Team</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </div>
+        <div class="connect">
+            <h4>Let’s Connect!</h4>
+            <p>Connect with entrepreneurs, build your network, make great business.</p>
+            <div class="social-media">
+                </a>
+                <a href="https://x.com/kulwebtech" target="_blank" aria-label="Twitter" class="social-icon" rel="noopener">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                                    
+                <a href="https://www.linkedin.com/company/kulweb-technologies/posts/?feedView=all" target="_blank" aria-label="LinkedIn" class="social-icon" rel="noopener">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/kulwebtechnologies/" target="_blank" aria-label="Instagram" class="social-icon" rel="noopener">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright © 2024 Kulwebtech</p>
+    </div>
+</footer>
+<script>
+    window.onload = function() {
+        setTimeout(function() {
+            window.scrollTo(0, 0);
+        }, 0); // Delay scrolling just a bit
+    };
+</script>
+		
+</body>
+
+<script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</html>

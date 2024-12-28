@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kulweb Technologies offers innovative IT solutions and managed services.">
+    <meta name="keywords" content="IT Solutions, Managed Services, Technology, Kulweb Technologies">
+    <title>Kulweb Tech</title>
+    <link rel="icon" href="images/Kulweb_1_-removebg-preview(2)(2).png" type="image/x-icon">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="menu-left">
+                <div class="logo">
+                    <img src="images/Kulweb_1_-removebg-preview(2)(2).png" alt="Logo" class="logo">
+                </div>
+            </div>
+            <div class="menu-right">
+                <ul class="menu-li">
+                    <li>
+                        <a href="index.html" class="menu-link">Home</a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#" class="menu-link">Company <span class="arrow">  ▼</span></a>
+                        <ul class="submenu">
+                            <li><a href="aboutus.html">About-Us</a></li>
+                            <li><a href="ourteam.html">Our-Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="services.html" class="menu-link">Services <span class="arrow">  ▼</span></a>
+                        <ul class="submenu">
+                            <li><a href="services.html">Cloud Services</a></li>
+                            <li><a href="services.html">Microsoft Azure</a></li>
+                            <li><a href="services.html">Microsoft 365</a></li>
+                            <li><a href="services.html">Network Services</a></li>
+                            <li><a href="services.html">Unified Communications</a></li>
+                            <li><a href="services.html">Security Services</a></li>
+                            <li><a href="services.html">Managed IT Services</a></li>
+                            <li><a href="services.html">Website Design</a></li>
+                            <li><a href="services.html">Hardware Repairs</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="menu-link">Contact</a>
+                    </li>
+                </ul>
+                <button onclick="toggleMenu()" class="btn-menubar lg-hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32-14.3 32 32z"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        
+        <div class="text-box">
+            <div class="text-content">                
+                <h1>Expect help without any <span style="color: #37b426;">delay</span></h1>
+                
+            </div>
+        </div>
+    </header>
+    
+    <script>
+        function toggleMenu() {
+            const menu_box = document.querySelector(".menu-li");
+            const navbar = document.querySelector(".navbar");
+            navbar.classList.toggle('active');
+            menu_box.classList.toggle('active');
+        }
+    </script>
+    <section id="contact-us" class="contact-us">
+        <div class="container">
+            <div class="row">
+                <!-- Left Column -->
+                <div class="col-lg-6">
+                    <h2 class="section-title text-center">Get in Touch</h2>
+                    <div class="social-icons">
+                    </a>
+                    <a href="https://x.com/kulwebtech" target="_blank" aria-label="Twitter" class="social-icon" rel="noopener">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                                        
+                    <a href="https://www.linkedin.com/company/kulweb-technologies/posts/?feedView=all" target="_blank" aria-label="LinkedIn" class="social-icon" rel="noopener">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/kulwebtechnologies/" target="_blank" aria-label="Instagram" class="social-icon" rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h4>Our Location:</h4>
+                            <p>61 Katherine Street, Sandton, Johannesburg, 2191</p>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fas fa-envelope"></i>
+                            <h4>Email:</h4>
+                            <p><a href="mailto:info@kulwebtech.com">info@kulwebtech.com</a></p>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fas fa-clock"></i>
+                            <h4>Operation Hours:</h4>
+                            <p>Monday – Friday 08:00 - 17:00 | Saturday – Sunday CLOSED</p>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fas fa-phone-alt"></i>
+                            <h4>Support Contact:</h4>
+                            <p>servicedesk@kulwebtech.com</p>
+                        </div>
+                    </div>                    
+                </div>
+                
+                <!-- Right Column (Map) -->
+                <div class="col-lg-6">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.6042812352407!2d28.052168975355034!3d-26.111833260218372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950cd28e8ab3b9%3A0x988355ff6bc46982!2s61%20Katherine%20St%2C%20Dennehof%2C%20Sandton%2C%202196!5e0!3m2!1sen!2sza!4v1729442047189!5m2!1sen!2sza"
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Kulwebtech</h3>
+                <p>61 Katherine Street, Sandton Johannesburg 2191</p>
+                <p> <br></p></p>
+                <p> <br></p></p>
+                <p>Operation hours:</p>
+                <p>Monday – Friday 08:00 - 17:00</p>
+                <p>Saturday – Sunday CLOSED</p>
+            </div>
+            <div class="quick-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="ourteam.html">Our Team</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+    
+                </ul>
+            </div>
+            <div class="connect">
+                <h4>Let’s Connect!</h4>
+                <p>Connect with entrepreneurs, build your network, make great business.</p>
+                <div class="social-media">
+                    </a>
+                    <a href="https://x.com/kulwebtech" target="_blank" aria-label="Twitter" class="social-icon" rel="noopener">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                                        
+                    <a href="https://www.linkedin.com/company/kulweb-technologies/posts/?feedView=all" target="_blank" aria-label="LinkedIn" class="social-icon" rel="noopener">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/kulwebtechnologies/" target="_blank" aria-label="Instagram" class="social-icon" rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024 Kulwebtech</p>
+        </div>
+    </footer>
+    </body>
+    
+    <script src="js/script.js"></script>
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                window.scrollTo(0, 0);
+            }, 0); // Delay scrolling just a bit
+        };
+    </script>
+    
+    </html>

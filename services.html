@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kulweb Technologies offers innovative IT solutions and managed services.">
+    <meta name="keywords" content="IT Solutions, Managed Services, Technology, Kulweb Technologies">
+    <title>Kulweb Tech</title>
+    <link rel="icon" href="images/Kulweb_1_-removebg-preview(2)(2).png" type="image/x-icon">
+    <link rel="stylesheet" href="css/service.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="menu-left">
+                <div class="logo">
+                    <img src="images/Kulweb_1_-removebg-preview(2)(2).png" alt="Logo" class="logo">
+                </div>
+            </div>
+            <div class="menu-right">
+                <ul class="menu-li">
+                    <li>
+                        <a href="index.html" class="menu-link">Home</a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#" class="menu-link">Company <span class="arrow">  ▼</span></a>
+                        <ul class="submenu">
+                            <li><a href="aboutus.html">About-Us</a></li>
+                            <li><a href="ourteam.html">Our-Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="services.html" class="menu-link">Services <span class="arrow">  ▼</span></a>
+                        <ul class="submenu">
+                            <li><a href="services.html">Cloud Services</a></li>
+                            <li><a href="services.html">Microsoft Azure</a></li>
+                            <li><a href="services.html">Microsoft 365</a></li>
+                            <li><a href="services.html">Network Services</a></li>
+                            <li><a href="services.html">Unified Communications</a></li>
+                            <li><a href="services.html">Security Services</a></li>
+                            <li><a href="services.html">Managed IT Services</a></li>
+                            <li><a href="services.html">Website Design</a></li>
+                            <li><a href="services.html">Hardware Repairs</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="menu-link">Contact</a>
+                    </li>
+                </ul>
+                <button onclick="toggleMenu()" class="btn-menubar lg-hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32-14.3 32 32z"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        
+        <div class="text-box">
+            <div class="text-content">                
+                <h1>Our <span style="color: #37b426;">services</span></h1>
+                
+            </div>
+        </div>
+    </header>
+    
+    <script>
+        function toggleMenu() {
+            const menu_box = document.querySelector(".menu-li");
+            const navbar = document.querySelector(".navbar");
+            navbar.classList.toggle('active');
+            menu_box.classList.toggle('active');
+        }
+    </script>
+    <section class="services-detail">
+        <div class="container">
+            <!-- Cloud Services Section -->
+            <div class="service-section">
+                <div class="service-content">
+                    <h2>Cloud Services</h2>
+                    <p>The cloud computing model enables convenient, on-demand access to a shared pool of configurable computing resources, which are rapidly provisioned and released with minimal effort.</p>
+                    <p>Cloud services are delivered as either IaaS, PaaS, or SaaS:</p><br>
+                    <ul>
+                        <li><strong>Infrastructure as a Service (IaaS)</strong>: Delivers Cloud Infrastructure like servers, storage, network, and operating systems.</li>
+                        <li><strong>Software as a Service (SaaS)</strong>: Software that is built, customized, and delivered to customers on demand, with built-in scalability and flexible billing options.<br></li>
+                    </ul>
+                    <p><br>Kulweb is a provider of Cloud Services, focusing on Microsoft Azure. Azure’s rich collection of toolsets ensures that any cloud solution can be assembled with relative ease, providing a stable and effective solution to most client needs.</p>
+                </div>
+                <div class="service-image-container">
+                    <img src="images/cloud computing services image.jpg" alt="Cloud Services" class="service-image">
+                </div>
+            </div>
+    
+            <!-- Microsoft Azure Section -->
+            <div class="service-section">
+                <div class="service-image-container">
+                    <img src="images/microsoft azure service image.jpg" alt="Microsoft Azure" class="service-image">
+                </div>
+                <div class="service-content">
+                    <h2>Microsoft Azure</h2>
+                    <p>Microsoft launched its cloud platform, Azure, in 2010. Azure is currently the only major cloud platform consistently ranked as a leader for IaaS, PaaS, and SaaS. Microsoft continues to use this same platform for its own offerings, such as Xbox Live, Bing, Office 365, SQL, etc.</p>
+                    <p><br>Microsoft is extensively marketing its cloud offering to enterprises to roll out their own services and applications, with great success.</p>
+                </div>
+            </div>
+    
+            <!-- Microsoft 365 Section -->
+            <div class="service-section">
+                <div class="service-content">
+                    <h2>Microsoft 365</h2>
+                    <p>Microsoft’s enduring office suite has been grafted into the industry-leading Office 365 range of on-demand, cloud-powered products. Extend your Office software into a rich collaboration suite with tons of new features that make your life easy, such as:</p>
+                    <ul>
+                        <li>Never lose your data with OneDrive</li>
+                        <li>Collaborate with colleagues, customers, and suppliers using Microsoft Teams</li>
+                        <li>Turn messy fileshares into easy-to-use document libraries with SharePoint</li>
+                        <li>Automate business processes with Flow</li>
+                        <li>Use Yammer to engage colleagues in a social media-like interface</li>
+                    </ul>
+                </div>
+                <div class="service-image-container">
+                    <img src="images/microsoft 365 service image.webp" alt="Microsoft 365" class="service-image">
+                </div>
+            </div>
+    
+            <!-- Network Design, Maintenance & Cloud Services Section -->
+            <div class="service-section">
+                <div class="service-image-container">
+                    <img src="images/network design , maintenance & cloud services images.jpg" alt="Network Design, Maintenance & Cloud Services" class="service-image">
+                </div>
+                <div class="service-content">
+                    <h2>Network Design, Maintenance & Cloud Services</h2>
+                    <p>The rapid development of wireless networks, cloud services, and mobile devices means there are now more options than ever before for your IT network design and operation.</p>
+                    <p>Kulweb’s team of experts specialize in multiple technologies, ensuring that we can design and implement a network that’s specific to your needs. To design an efficient, cost-effective, and suitable network, we start with a thorough IT audit.</p>
+                    <p>Before we design your network, we ensure that anything we implement is compatible with your current infrastructure and operating practices. Kulweb outlines your options, allowing you to prioritize cost, speed, and capacity in line with your business objectives.</p>
+                </div>
+            </div>
+    
+            <!-- Unified Communications Section -->
+            <div class="service-section">
+                <div class="service-content">
+                    <h2>Unified Communications</h2>
+                    <p>Unified communications is a business and marketing concept describing integrating enterprise communication services such as voice, video, personal, team messaging, voicemail, and content sharing. This can include control, management, and integration of these channels. Unified communications allows an individual to send a message on one medium and receive the same communication on another medium.  Kulweb Technologies offers unified communications solutions that enable your business to operate quickly and cheaply.</p>
+                </div>
+                <div class="service-image-container">
+                    <img src="images/unfied communications services image.jpg" alt="Unified Communications" class="service-image">
+                </div>
+            </div>
+    
+            <!-- Managed Support Services Section -->
+            <div class="service-section">
+                <div class="service-image-container">
+                    <img src="images/managed services images.jpg" alt="Managed Support Services" class="service-image">
+                </div>
+                <div class="service-content">
+                    <h2>Managed Support Services</h2>
+                    <p>We develop customer-centric outsourced solutions, managing various parts of a customer’s infrastructure to provide fully managed IT services.</p>
+                    <p>Our solutions typically include (but are not limited to):</p>
+                    <ul>
+                        <li>Managed helpdesk for logging user queries</li>
+                        <li>Maintaining an asset inventory for equipment and software</li>
+                        <li>Resolution of user issues based on tickets logged</li>
+                        <li>Day-to-day maintenance of server farms, on-premises networks, and other technologies</li>
+                        <li>Interaction with and management of third-party providers of technology services</li>
+                        <li>Provision of monthly reporting to track service performance</li>
+                        <li>Creation, enforcement, and ongoing maintenance of IT processes and policies</li>
+                        <li>Project-based management of IT initiatives</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Security Services Section -->
+            <div class="service-section">
+                <div class="service-content">
+                <h2>Cyber-security Services</h2>
+                    <p>Protecting your business from malware should be a high priority item on every IT manager or SMB owner’s agenda.</p>
+                    <p>Our network and endpoint security solutions offer you:</p>
+                    <ul>
+                        <li>Endpoint security</li>
+                        <li>Network security</li>
+                        <li>Network access control</li>
+                        <li>Application security</li>
+                        <li>Email security</li>
+                        <li>Firewalls</li>
+                        <li>Web security</li>
+                    </ul>
+                </div>
+                <div class="service-image-container">
+                    <img src="images/security services image.jpg" alt="Security Services" class="service-image">
+                </div>
+            </div>
+    
+            <!-- Website Design Section -->
+            <div class="service-section">
+                <div class="service-image-container">
+                    <img src="images/website design services.jpg" alt="Website Design" class="service-image">
+                </div>
+                <div class="service-content">
+                    <h2>Website Design</h2>
+                    <p>Our expertise in website design allows us to create fast, smooth apps for any platform. Our team connects conventional technologies with unique app logic, resulting in a polished design and excellent UI/UX that meets the goals of our customers and wins the hearts of users.</p>
+                </div>
+            </div>
+
+            <!-- •	Hardware repairs Section -->
+            <div class="service-section">
+                <div class="service-content">
+                    <h2>Hardware repairs </h2>
+                    <p>Our team provides hardware sales & repairs, minimizing downtime and keeping your business operations uninterrupted.</p>
+                </div>
+                <div class="service-image-container">
+                    <img src="images/Hardware landing page.png" alt="Hardware repairs" class="service-image">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Kulwebtech</h3>
+                <p>61 Katherine Street, Sandton Johannesburg 2191</p>
+                <p> <br></p></p>
+                <p> <br></p></p>
+                <p>Operation hours:</p>
+                <p>Monday – Friday 08:00 - 17:00</p>
+                <p>Saturday – Sunday CLOSED</p>
+            </div>
+            <div class="quick-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="ourteam.html">Our Team</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+    
+                </ul>
+            </div>
+            <div class="connect">
+                <h4>Let’s Connect!</h4>
+                <p>Connect with entrepreneurs, build your network, make great business.</p>
+                <div class="social-media">
+                    </a>
+                    <a href="https://x.com/kulwebtech" target="_blank" aria-label="Twitter" class="social-icon" rel="noopener">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                                        
+                    <a href="https://www.linkedin.com/company/kulweb-technologies/posts/?feedView=all" target="_blank" aria-label="LinkedIn" class="social-icon" rel="noopener">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/kulwebtechnologies/" target="_blank" aria-label="Instagram" class="social-icon" rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024 Kulwebtech</p>
+        </div>
+    </footer>
+    </body>
+    
+    <script src="js/script.js"></script>
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                window.scrollTo(0, 0);
+            }, 0); // Delay scrolling just a bit
+        };
+    </script>
+    
+    </html>

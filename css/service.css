@@ -1,0 +1,482 @@
+/* General and reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+    list-style-type: none; /* Removes bullets from list items */
+}
+
+body, html {
+    height: auto;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: auto;
+    padding: 20px 75px;
+    transition: all 1s ease;
+}
+/* Logo positioned on the left */
+nav .logo {
+    font-size: 23px;
+    font-weight: 600;
+    color: white;
+    cursor: default;
+}
+
+/* Resize logo image */
+.logo img {
+    height: 250px; /* Adjust height as needed */
+    width: auto; /* Maintains aspect ratio */
+    object-fit: contain; /* Ensures the image scales within the specified height */
+}
+
+.logo {
+    width: 200px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+.btn-menubar svg {
+    width: 40px;
+    height: 40px;
+    fill: #37b426;
+    margin-bottom: 0;
+}
+
+.lg-hidden {
+    display: none;
+}
+.menu-right > .menu-li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+.btn-link {
+    border: none;
+    outline: none;
+    padding: 8px 18px;
+    color: #fff;
+    background-color: #37b426;
+}
+.menu-li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    background-color: rgba(0, 0, 0, 0.3); /* Set the menu background with 50% opacity */
+    padding: 20px;  /* Optional: add padding for spacing */
+    border-radius: 5px;  /* Optional: for rounded corners */
+}
+.menu-li .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    color: white;
+}
+
+/* Adjust the menu links to ensure readability with the opacity background */
+.menu-li .menu-link {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 8px 18px;  /* Adjust padding for better click area */
+    border-radius: 5px;  /* Optional, for rounded corners */
+}
+/* Hover effect for menu links */
+.menu-li .menu-link:hover {
+    background-color: rgba(0, 0, 0, 0.5);  /* Darker opacity on hover */
+}
+
+.header{
+    position: relative;
+    background:url('../images/our\ services\ image.jpg');
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text-box{
+    width: 50%;
+    padding: 0 75px;
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    padding-bottom: 310px;
+    padding-left: 160px;
+}
+.text-content h1{
+    font-size: 4rem;
+    /*padding-bottom: 100px;*/
+    padding-top: -300px;
+    color: white;
+    top: 80px;
+}
+
+.text-content .btn-link{
+    padding: 10px 10px;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.text-content h1,
+.text-content p{
+    text-shadow: 2px 2px 2px #000;
+}
+
+/* Submenu Styles */
+/* Hide submenu by default */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding: 10px 30px;
+    list-style: none;
+    margin-top: 17px;
+    top: 100%;
+    left: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border: 2px solid white;
+}
+
+.submenu li {
+    padding: 10px 20px;
+}
+
+.submenu li a {
+    text-decoration: none;
+    color: white; /* Adjust color as needed */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.submenu li a:hover {
+    color: #37b426; /* Highlight color on hover */
+}
+
+
+
+/* Adjust positioning within navbar */
+.menu-right > .menu-li > li {
+    position: relative;
+}
+
+.menu-right > .menu-li > li.has-submenu > a {
+    display: flex;
+    align-items: left;
+}
+
+@media (max-width: 900px) {
+    .sm-hidden {
+        display: none;
+    }
+
+    .lg-hidden {
+        display: block;
+    }
+
+    .navbar {
+        padding: 10px 25px;
+    }
+
+    /* Menu container that becomes fixed when active */
+    .menu-right .menu-li {
+        position: fixed;
+        top: -550px;
+        left: 0px;
+        padding: 10px 25px;
+        width: 100%;
+        opacity: 0;
+        z-index: 1;
+        gap: 10px;
+        color: var(--text-color);
+        background: var(--light-color);
+        flex-direction: column;
+        visibility: hidden;
+        transition: all 1s ease;
+        transform-origin: bottom;
+    }
+
+    /* Active navbar with white background and moving it down */
+    .navbar.active {
+        
+        top: 60px; /* Adjusted to prevent logo overlap */
+        transition: top 0.3s ease; /* Smooth transition */
+    }
+
+    .navbar.active .logo h2 {
+        color: var(--main-color);
+    }
+
+    /* Active state of the menu-li */
+    .menu-li.active {
+        background-color: #ddd;
+        left: 0;
+        top: 220px; /* Adjust to avoid covering content */
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-li.active .menu-link {
+        color: var(--text-color);
+    }
+
+    .menu-li li {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .text-box {
+        width: 100%;
+        padding: -1 25px;
+    }
+
+    .text-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Ensure the navbar doesn't cover the logo on small screens */
+@media (max-width: 900px) {
+    .navbar.active {
+        top: 80px; /* Adjust the value as needed for better positioning */
+    }
+}
+
+/* Logo Adjustments */
+@media (max-width: 900px) {
+    .logo img {
+        height: 120px; /* Smaller height for responsiveness */
+        width: auto;   /* Maintain aspect ratio */
+    }
+
+    .logo {
+        width: 150px;
+        height: auto;
+    }
+}
+
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-family: "Varela Round", Sans-serif;
+    line-height: 1.4em;
+    font-weight: 600;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Services Section */
+.services-detail {
+    padding: 60px 0;
+    background-color: white;
+    font-family: "Varela Round", sans-serif; /* Apply font to all elements in this section */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-family: "Varela Round", sans-serif; /* Apply font to the page title */
+}
+
+.page-title span {
+    color: #37b426;
+}
+
+/* Service Card Section */
+.service-section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    padding: 40px;
+    transition: transform 0.3s ease;
+    font-family: "Varela Round", sans-serif; /* Apply font to service sections */
+}
+
+/* Hover effect to make it stand out */
+.service-section:hover {
+    transform: translateY(-5px);
+}
+
+/* Content and image layout */
+.service-content,
+.service-image-container {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+    .service-content,
+    .service-image-container {
+        width: 48%;
+    }
+}
+
+.service-image-container {
+    text-align: center;
+}
+
+.service-image {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Text Styling */
+.service-section h2 {
+    font-size: 28px;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: "Varela Round", sans-serif;
+    line-height: 1.4em;
+}
+
+.service-section p,
+.service-section ul {
+    font-size: 16px;
+    color: black;
+    font-family: "Varela Round", sans-serif; /* Apply font to paragraph and list items */
+}
+
+.service-section ul {
+    padding-left: 20px;
+}
+
+.service-section ul li {
+    color: #444;
+    list-style-type: disc;
+}
+
+
+
+
+.footer {
+    background-color: #37b426; /* Dark navy background for clarity */
+    color: #ecf0f1; /* Light grey text color for contrast */
+    padding: 40px 20px; /* Padding around the footer */
+    text-align: center; /* Center text */
+}
+
+.footer-content {
+    display: flex; /* Flexbox layout for footer sections */
+    justify-content: space-between; /* Even spacing between sections */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    max-width: 1200px; /* Maximum width for the content */
+    margin: 0 auto; /* Center the content */
+    gap: 30px; /* Adds space between the sections */
+}
+
+.footer-info, .quick-links, .connect {
+    flex: 1 1 200px; /* Flexibility with a minimum width */
+    margin: 10px; /* Space around sections */
+    padding: 20px; /* Padding for inner sections */
+    background-color: #37b426; /* Slightly transparent background for contrast */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.footer-info h3, .quick-links h4, .connect h4 {
+    margin-bottom: 10px; /* Space below headings */
+    font-weight: bold; /* Bold heading */
+}
+
+.quick-links ul {
+    list-style: none; /* Remove default list style */
+    padding: 0; /* Remove padding */
+}
+
+.quick-links li {
+    margin: 5px 0; /* Space between links */
+}
+
+.quick-links a {
+    color: white; /* Bright yellow link color */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and transform transition */
+}
+
+.quick-links a:hover {
+    color: #37b426; /* Change to a vibrant green on hover */
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
+.connect {
+    margin-top: 20px; /* Space above social media section */
+}
+
+.social-media {
+    margin-top: 15px; /* Space above the social media icons */
+}
+
+.social-icon {
+    color: #ecf0f1; /* Light grey icon color for contrast */
+    font-size: 1.8em; /* Size of the icons */
+    margin: 0 10px; /* Space between icons */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
+    color: #37b426; /* Change to bright yellow on hover */
+}
+
+.footer-bottom {
+    margin-top: 20px; /* Space above copyright */
+    border-top: 1px solid #000000; /* Top border for separation */
+    padding-top: 10px; /* Padding above copyright */
+    font-size: 0.9em; /* Smaller font size for copyright */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack sections on smaller screens */
+        align-items: center; /* Center align sections */
+    }
+}
